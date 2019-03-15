@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("assets/img/sample13.jpg");
+}
+.footer {
+    height: 8%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 3rem;
+    background-color:black;
+    color:white;
+    text-align: left;
+}
+.headerpage { 
+    background-color: white;
+}
+.block {
+    position: sticky;
+    background-color: white;
+    opacity: 0.8;
+    padding: 1%;
+}
+
+.footerRight {
+    float: right;
+}
+.nav-pills {
+    color:white;
+    font-size: 25px;
+}
+.anchr {
+    color:black;
+}
+span {
+    color: red;
+}
+
+

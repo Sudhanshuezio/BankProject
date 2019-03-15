@@ -1,0 +1,14 @@
+<body>
+  <div class="heading"><h1>Welcome to Home Loan Services</h1></div>
+  <div class="block">
+    <h2>EMI Calculator</h2><br>
+      <form class="container" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+        <input type="number" name="principalamount" placeholder="Principal Amount" size=47% formControlName="principalamount" #p><br><br>
+        <input type="number" name="tenure" placeholder="Tenure" size=47% formControlName="tenure" #t><br><br>
+        Rate Of Interest: <br><input type="number" name="roi" [value] = "rate" size=47% formControlName="roi" disabled=true><br><br>
+        EMI: {{ EMI }} <br><br>
+        <button type="submit" (click)="calculate(p.value,t.value)">CALCULATE</button>&nbsp;
+        <button type="clear">RESET</button>
+      </form>
+  </div>
+</body>

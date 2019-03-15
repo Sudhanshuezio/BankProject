@@ -1,0 +1,20 @@
+<body>
+  <div id="content">
+    <h1>Loans</h1>
+    <label>Loan Type:
+      <select (change)="display(ltype.value)" #ltype>
+      <option value="">--Choose Type--</option>
+      <option value="1">Car Loan</option>
+      <option value="2">Education Loan</option>
+      <option value="3">Home Loan</option>
+      <option value="4">Personal Loan</option>
+    </select>
+    </label>
+    <div [ngSwitch]="option">
+      <p *ngSwitchCase="1"><app-car></app-car></p>
+      <p *ngSwitchCase="2"><app-education></app-education></p>
+      <p *ngSwitchCase="3"><app-homel></app-homel></p>
+      <p *ngSwitchCase="4"><app-personal></app-personal></p>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,69 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "fname": "Jon",
+      "lname": "Snow",
+      "dob": "07/16/1980",
+      "gender": "Male",
+      "fathername": "Rhaegar Targaryen",
+      "address": "The Wall",
+      "email": "snowjon@gmail.com",
+      "un": "AegonSnow",
+      "pass1": "1234",
+      "pass2": "1234"
+    },
+    {
+      "id": 3,
+      "fname": "Danaerys",
+      "lname": "Targaryen",
+      "dob": "1986-02-12",
+      "gender": "female",
+      "fathername": "Aegon Targaryen",
+      "address": "Essos",
+      "email": "danaeryskhaleesi@gmail.com",
+      "un": "danaerys21",
+      "pass1": "1243",
+      "pass2": "1243"
+    },
+    {
+      "id": 12,
+      "fname": "abcd",
+      "lname": "asda",
+      "dob": "2019-03-21",
+      "gender": "",
+      "fathername": "asdasd",
+      "address": "asdasdas",
+      "email": "asdasd",
+      "un": "asdas",
+      "pass1": "12",
+      "pass2": "12"
+    },
+    {
+      "id": 23,
+      "fname": "Chris",
+      "lname": "Hemsworth",
+      "dob": "1988-06-07",
+      "gender": "male",
+      "fathername": "Odin",
+      "address": "asgard",
+      "email": "thor@gmail.com",
+      "un": "kingofasgard",
+      "pass1": "2313",
+      "pass2": "1234"
+    },
+    {
+      "id": 27,
+      "fname": "Arya ",
+      "lname": "Stark",
+      "dob": "2019-03-27",
+      "gender": "female",
+      "fathername": "Eddard Stark",
+      "address": "Winterfell",
+      "email": "noonestark@gmail.com",
+      "un": "noone",
+      "pass1": "braavos01",
+      "pass2": "braavos01"
+    }
+  ]
+}

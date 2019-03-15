@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+        <body>
+                <br>
+                <br>
+                <div class="mainpage">
+                    <h1 style="text-align: center">Login</h1>
+                    <form class="container" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+                        <br><input type="text" name="id" size=51% formControlName="id" placeholder="User ID" required><br><br>
+                        <input type="password" name="pass" size=51% formControlName="pass1" placeholder="Password"required><br><br>
+                        &nbsp;&nbsp;<button type="submit">LOGIN</button>&nbsp;<br><br>
+                        <label>New member?</label><br>
+                        <a routerLink="signup">Sign Up</a><br>
+                        <span *ngIf="errorMsg">{{ errorMsg }}</span>
+                    </form>
+                </div>
+        </body>
+</html>

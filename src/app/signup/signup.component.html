@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <br>
+        <div >
+               
+                <form class="container" [formGroup]="form" (ngSubmit)="onSubmit(form.value)"> 
+                <fieldset class="mainpage">
+                <div class="heading"><h1>Create your Account</h1><hr></div>
+                <div class="content">
+                    <strong>User ID</strong><br><input type="text" name="id" size = 57% formControlName="id" required><br><br>
+                    <strong>First Name</strong><br><input type="text" name="fn" size = 57% formControlName="fname" required><br><br>
+                    <strong>Last Name</strong><br><input type="text" name="ln" size = 57% formControlName="lname" required><br><br>
+                    <label><strong>Date of Birth</strong></label><br><input type="date" name="dob"  size = 57% formControlName="dob" required><br><br> 
+                    <label><strong>Gender</strong></label><br> <input type="radio" name="gender"  value="male" formControlName="gender">Male
+                    <label></label><input type="radio" name="gender" value="female" formControlName="gender">Female<br><br>
+                    <strong>Father's Name</strong><br><input type="text" name="ft" size = 57% formControlName="fathername" required><br><br>
+                    <label>Address</label><br>
+                    <textarea rows="7" cols="60" required formControlName="address"></textarea><br><br>
+                    <strong>Email ID</strong><br><input type="email" name="mail" size = 57% formControlName="email" required><br><br>
+                    <strong>Username</strong><br><input type="text" name="uname" size = 57% formControlName="un" required><br><br>
+                    <strong>Password</strong><br><input type="password" name="pass1"  size = 57% formControlName="pass1" required><br><br>
+                    <strong>Confirm Password</strong><br><input type="password" name="pass2"   formControlName="pass2" size = 57% required><br><br>
+                    <button type="submit" (click)="postItem(form.value)" [disabled]="!form.valid">Sign Up</button><br>
+                    <hr>
+                    <label>Already a member?</label><br>
+                    <a style="color:#0097C3" routerLink="login">Login</a>
+                </div>
+                </fieldset>
+                </form>
+        </div><br><br><br><br><br>
+    </body>
+</html>

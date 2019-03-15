@@ -1,0 +1,28 @@
+.mainpage {
+    margin: auto;
+    width: 30%;
+    height:40%;
+    padding: 2%;
+    font-size: 1.2vw; 
+    background-color: white;
+    opacity: 0.95;
+}
+
+/*body {
+    background-image: url("../../assets/img/bankBackground3.jpg");
+}*/
+
+.address {
+    background-color: white;
+    opacity: 0.9;
+}
+button {
+    background-color: #08CCF0;
+    padding: 12px 45px;
+    border-radius: 7%;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    margin: 0;
+    font-weight: bold;
+}
